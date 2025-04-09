@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body, html {
     margin: 0;
@@ -11,7 +13,7 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the top */
     align-items: center;
     height: 100vh;
     background-color: #f9f9f9;
@@ -20,9 +22,35 @@ body {
 
 header {
     display: flex;
+    flex-direction: column; /* Stack Date/Time and nav vertically */
     justify-content: center;
     align-items: center;
-    gap: 1rem; /* Space between Date and Time */
+    margin-top: 1rem; /* Add some spacing from the top */
+    gap: 1rem; /* Space between Date/Time and navigation links */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between navigation links */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007acc; /* Change color on hover */
 }
 
 footer {

@@ -1,5 +1,5 @@
 ---
-import '../styles/global.css';
+import '/workspaces/PersonalWebsite/styles/global.css';
 import Time from '../components/time.astro';
 import Date from '../components/date.astro';
 ---
@@ -12,6 +12,13 @@ import Date from '../components/date.astro';
     </head>
     <body>
         <header>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><button class="btn no-outline"><a href="/" class="nav-link">Home</a></button></li>
+                    <li><button class="btn no-outline"><a href="/projects" class="nav-link">Projects</a></button></li>
+                    <li><button class="btn no-outline"><a href="contact" class="nav-link">Contact</a></button></li>
+                </ul>
+            </nav>
             <Date/>
             <Time/>
         </header>
