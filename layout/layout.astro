@@ -1,0 +1,71 @@
+---
+const { pageTitle } = Astro.props;
+import "../styles/global.css";
+import Date from "../components/date.astro"; // Ensure this file exists at the specified path
+import Time from "../components/time.astro"; // Ensure this file exists at the specified path
+---
+
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<!-- dynamically populated title -->
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<header>
+			<!-- needs to overwrite global.css for now
+			 		may fix in the future -->
+			<div style="display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 0.625em;
+						margin: 0;
+						padding: 0;">
+				<img src="/bloom_buddy1.png" 
+				     alt="logo"
+					 style="width: 3em;
+							height: auto;
+							margin: 0;
+							padding: 0;" />
+				<h1 class="logo">Bloom Buddy</h1>
+			</div>
+
+			<!-- Date and Time horizontally aligned and centered -->
+			<div style="display: flex; 
+						align-items: center; 
+						justify-content: center; 
+						gap: 0.625em;
+						margin: 0;
+						padding: 0;
+						font-size: .8em;
+    					font-weight: normal;">
+				<!-- Date -->
+				<Date/>
+				<!-- Time -->
+				<Time/>
+			</div>
+			
+		</header>
+
+		<slot /> <!-- This is where the page content will be injected -->
+		
+		<!-- footer -->
+        <!-- <footer>
+            <p class="copyright">© 2025 Bloom Buddy. All rights reserved.</p>
+        </footer> -->
+	</body>
+</html>
+
+<!-- overwrite style -->
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
