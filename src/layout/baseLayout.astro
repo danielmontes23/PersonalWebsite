@@ -1,6 +1,7 @@
 ---
 import Time from '../components/time.astro';
 import Date from '../components/date.astro';
+import '../styles/global.css';
 ---
 
 <html lang="en">
@@ -11,7 +12,6 @@ import Date from '../components/date.astro';
     </head>
     <body>
         <header>
-            <h1>Welcome to My Website</h1>
             <Date/>
             <Time/>
         </header>
@@ -19,7 +19,7 @@ import Date from '../components/date.astro';
             <slot />
         </main>
         <footer>
-            <p>&copy; My Website. All rights reserved.</p>
+            <p>&copy; 2025 Daniel Montes</p>
         </footer>
     </body>
 </html>

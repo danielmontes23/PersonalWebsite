@@ -1,18 +1,34 @@
 @import "tailwindcss";
 
-html {
-    background-color: rgb(189, 215, 206);
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    background-color: #088908;
-    padding: 0;
-    margin-bottom: 0.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between Date and Time */
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    color: #cbecca;
-    font-size: 1.25em;
-    font-weight: bold;
-    width: 100%;
 }
