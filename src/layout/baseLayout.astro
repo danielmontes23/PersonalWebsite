@@ -12,6 +12,8 @@ import Date from '../components/date.astro';
     </head>
     <body>
         <header>
+            <Date/>
+            <Time/>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><button class="btn no-outline"><a href="/" class="nav-link">Home</a></button></li>
@@ -19,8 +21,6 @@ import Date from '../components/date.astro';
                     <li><button class="btn no-outline"><a href="contact" class="nav-link">Contact</a></button></li>
                 </ul>
             </nav>
-            <Date/>
-            <Time/>
         </header>
         <main>
             <slot />
