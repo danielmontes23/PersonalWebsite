@@ -1,0 +1,83 @@
+---
+
+---
+
+<script>
+
+    const allTheMonths = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+    const allTheDays = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ];
+    
+    
+    // Get and store current date and time with `new Date()` object
+    const dateNow = new Date();
+    
+    console.log( dateNow );
+    
+    const gotMonth = dateNow.getMonth();
+    // Get current day of the month
+    let gotDayOfMonth = dateNow.getDate();
+    // Get current year
+    const gotYear = dateNow.getFullYear();
+    // Get current day of the week
+    const gotDayOfWeek = dateNow.getDay();
+    
+    console.log(gotMonth, gotDayOfMonth, gotYear, gotDayOfWeek);
+  
+
+    // Get the month
+    const month = document.querySelector(".month");
+    // Get day of the month
+    const dayOfMonth = document.querySelector(".dayOfMonth");
+    // Get year
+    const year = document.querySelector('.year');
+    // Get Day of Week
+    const dayOfWeek = document.querySelector('.dayOfWeek');
+    
+    // Set the month
+    if (month) {
+        month.textContent = allTheMonths[gotMonth];
+    }
+    // Set day of the month
+    if (dayOfMonth) {
+        dayOfMonth.textContent = gotDayOfMonth.toString();
+    }
+    // Set the year
+    if (year) {
+        year.textContent = gotYear.toString();
+    }
+    // Set the day of the week
+    if (dayOfWeek) {
+        dayOfWeek.textContent = allTheDays[gotDayOfWeek];
+    }
+    </script>
+    
+    <!-- HTML -->
+    <section class="backdrop-blur-md bg-white/50">
+        <!-- <h1 style="text-align: center;">Today's Date:</h1> -->
+        <time>
+          <data class="dayOfWeek">SMTWTFS</data>
+          <data class="month">Month</data>
+            <data class="dayOfMonth">00</data>, <data class="year">0000</data>
+        </time>
+      </section>
