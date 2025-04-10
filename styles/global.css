@@ -18,8 +18,14 @@ body {
     height: 100vh; /* Full viewport height */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
     text-align: center;
+
+    /* Add the background image */
+    background-image: url('/images/WeatherBG.jpeg'); /* Adjust the path if necessary */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
 }
 
 header {
@@ -57,9 +63,11 @@ header {
 
 footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Remove background color */
+    color: black; /* Keep text color if needed */
     width: 100%; /* Ensure it spans the full width */
     position: relative; /* Keeps it at the bottom of the content */
+    border: none; /* Ensure no border is applied */
+    box-shadow: none; /* Remove any shadow if present */
 }
