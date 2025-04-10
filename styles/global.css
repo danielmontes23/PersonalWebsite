@@ -71,3 +71,14 @@ footer {
     border: none; /* Ensure no border is applied */
     box-shadow: none; /* Remove any shadow if present */
 }
+.justified-text {
+    text-align: justify; /* Justify the text to make lines the same length */
+    margin: 1rem 0; /* Optional: Add spacing between paragraphs */
+}
+
+.text-container {
+    max-width: 600px; /* Limit the width of the text */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 1rem; /* Add some padding for spacing */
+    text-align: justify; /* Keep the text justified */
+}
