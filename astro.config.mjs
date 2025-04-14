@@ -10,5 +10,15 @@ export default defineConfig({
     },
   },
 git add astro.config.mjs
-  outDir: 'dist', // Ensure this is set to 'dist'
+git commit -m "Update astro.config.mjs with build configuration"git push
+git pushgit pushnpm install
+npm run build
+npm run preview[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200  outDir: 'dist', // Ensure this is set to 'dist'
 });
