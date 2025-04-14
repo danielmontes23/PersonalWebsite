@@ -108,3 +108,10 @@ a {
 a:hover {
     text-decoration-color: #187; /* Optional: Change underline color on hover */
 }
+
+.text-bg {
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 0.5rem 1rem; /* Add padding around the text */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    display: inline-block; /* Ensure the background wraps tightly around the text */
+}
