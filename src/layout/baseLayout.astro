@@ -11,22 +11,24 @@ import Date from '../components/date.astro';
         <title>My Website</title>
     </head>
     <body>
-        <header>
-            <Date/>
-            <Time/>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><button class="btn no-outline"><a href="/" class="nav-link">Home</a></button></li>
-                    <li><button class="btn no-outline"><a href="/projects" class="nav-link">Projects</a></button></li>
-                    <li><button class="btn no-outline"><a href="/contact" class="nav-link">Contact</a></button></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <slot />
-        </main>
-        <footer>
-            <p>&copy; Daniel Montes 2025</p>
-        </footer>
+        <div class="text-bg">
+            <header>
+                <Date/>
+                <Time/>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><button class="btn no-outline"><a href="/" class="nav-link">Home</a></button></li>
+                        <li><button class="btn no-outline"><a href="/projects" class="nav-link">Projects</a></button></li>
+                        <li><button class="btn no-outline"><a href="/contact" class="nav-link">Contact</a></button></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <slot />
+            </main>
+            <footer>
+                <p>&copy; Daniel Montes 2025</p>
+            </footer>
+        </div>
     </body>
 </html>
