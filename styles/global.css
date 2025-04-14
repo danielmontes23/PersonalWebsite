@@ -49,6 +49,8 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center; /* Center the items */
+    gap: 2rem;
 }
 
 .nav-link {
