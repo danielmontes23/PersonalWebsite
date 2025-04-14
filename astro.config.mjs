@@ -5,7 +5,7 @@ export default defineConfig({
   integrations: [],
   build: {
     rollupOptions: {
-      external: ['/styles/global.css'], // Mark the CSS file as external
+      external: ['./styles/global.css'], // Use a relative path
     },
   },
 });
