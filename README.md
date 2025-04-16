@@ -1,6 +1,8 @@
 # My Personal Website🌐
 Welcome to my personal website! This is a modern, fast, and responsive portfolio built with [Astro](https://astro.build/), styled using [Tailwind CSS](https://tailwindcss.com/), and enhanced with custom CSS and JavaScript where needed.
 
+Here, you'll find not only information about me, but also a curated collection of other websites and projects I've built in the past. Most of these projects were developed independently, while a few were created as part of group collaborations. It's a living portfolio that showcases my growth, creativity, and technical skills across different technologies and platforms.
+
 ## Tech Stack
 - **Framework**: [Astro](https://astro.build/) – Static site generator for blazing-fast performance
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
