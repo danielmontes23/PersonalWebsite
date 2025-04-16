@@ -1,7 +1,7 @@
 # My Personal Website🌐
 Welcome to my personal website! This is a modern, fast, and responsive portfolio built with [Astro](https://astro.build/), styled using [Tailwind CSS](https://tailwindcss.com/), and enhanced with custom CSS and JavaScript where needed.
 
-## Tech Stack🚀
+## Tech Stack
 - **Framework**: [Astro](https://astro.build/) – Static site generator for blazing-fast performance
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
 - **Languages**:
@@ -9,7 +9,7 @@ Welcome to my personal website! This is a modern, fast, and responsive portfolio
   - CSS
   - JavaScript
 
-## Commands🧞
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -22,6 +22,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
