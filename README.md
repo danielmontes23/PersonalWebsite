@@ -1,3 +1,7 @@
+# My Personal Website🌐
+Welcome to my personal website! This is a modern, fast, and responsive portfolio built with [Astro](https://astro.build/), styled using [Tailwind CSS](https://tailwindcss.com/), and enhanced with custom CSS and JavaScript where needed.
+
+
 # Astro Starter Kit: Minimal
 
 ```sh
