@@ -6,8 +6,25 @@ import Layout from '../layout/baseLayout.astro';
     <p>The best way to contact me is via my school email:</p>
     <ul class="link-list">
         <li><a href="mailto:dmontes2@ewu.edu" class="link" style="color: white;">dmontes2@ewu.edu</a></li>
-        <li><a href="https://www.linkedin.com/in/daniel-montes-095602192/" target="_blank" class="link" style="color: white;">LinkedIn</a></li>
-        <li><a href="https://github.com/danielmontes23" target="_blank" class="link" style="color: white;">GitHub</a></li>
-        <li><a href="https://codepen.io/danielmontes23" target="_blank" class="link" style="color: white;">CodePen</a></li>
+        <li>
+            <!-- Social icons container: displays links side-by-side -->
+            <div style="display:flex; gap:12px; align-items:center; justify-content:center;">
+                <a href="https://www.linkedin.com/in/daniel-montes-095602192/" target="_blank" rel="noopener noreferrer" class="link" aria-label="LinkedIn (opens in new tab)" title="LinkedIn" style="color: white; display:inline-flex; align-items:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4zM8.5 8h3.8v2.06h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.63 4.74 6.05V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.73-2.54 3.5V23h-4z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/danielmontes23" target="_blank" rel="noopener noreferrer" class="link" aria-label="GitHub (opens in new tab)" title="GitHub" style="color: white; display:inline-flex; align-items:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.8 3.1 8.9 7.3 10.3.5.1.7-.2.7-.5v-1.8c-3 .6-3.6-1.2-3.6-1.2-.5-1.2-1.3-1.5-1.3-1.5-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.4 3.6 1 .1-.8.4-1.4.8-1.7-2.4-.3-4.9-1.2-4.9-5.3 0-1.2.4-2.1 1-2.9-.1-.3-.4-1.4.1-2.8 0 0 .8-.2 2.9 1 .8-.2 1.7-.3 2.6-.3s1.8.1 2.6.3c2.1-1.2 2.9-1 2.9-1 .5 1.4.2 2.5.1 2.8.6.8 1 1.7 1 2.9 0 4.1-2.5 5-4.9 5.3.4.4.7 1 .7 2v3c0 .3.2.6.7.5 4.2-1.4 7.3-5.5 7.3-10.3C23.1 5.3 18.3.5 12 .5z"/>
+                    </svg>
+                </a>
+                <a href="https://codepen.io/danielmontes23" target="_blank" rel="noopener noreferrer" class="link" aria-label="CodePen (opens in new tab)" title="CodePen" style="color: white; display:inline-flex; align-items:center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2L2 8v8l10 6 10-6V8L12 2zm0 2.18L19.44 8 12 12.82 4.56 8 12 4.18zM4 9.67l4 2.4v4.66L4 14.33V9.67zm8 7.73L8.56 15.9v-3.98L12 13.18l3.44-1.26v3.98L12 17.4zm4-2.77v-4.66l4-2.4v4.66l-4 2.4z"/>
+                    </svg>
+                </a>
+            </div>
+        </li>
     </ul>
 </Layout>
