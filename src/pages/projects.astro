@@ -175,19 +175,88 @@ import Layout from '../layout/baseLayout.astro';
 
     <!-- Add Coding Languages section at the bottom -->
     <h2 class="languages-title"><u>Technical Skills & Languages</u></h2>
+    <style>
+        .languages-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 20px 28px;
+            justify-items: center;
+            align-items: start;
+            max-width: 900px;
+            margin: 10px auto 0;
+        }
+        .language-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .language-icon {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            display: block;
+        }
+        .language-item span {
+            margin-top: 8px;
+            line-height: 1.2;
+            font-size: 0.95rem;
+        }
+    </style>
+
     <div class="languages-container">
-        <span class="language-bubble">Python</span>
-        <span class="language-bubble">Java</span>
-        <span class="language-bubble">C/C++</span>
-        <span class="language-bubble">SQL</span>
-        <span class="language-bubble">R</span>
-        <span class="language-bubble">Vue.js</span>
-        <span class="language-bubble">HTML</span>
-        <span class="language-bubble">CSS</span>
-        <span class="language-bubble">JavaScript</span>
-        <span class="language-bubble">Astro</span>
-        <span class="language-bubble">Markdown</span>
-        <span class="language-bubble">LaTeX</span>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="language-icon" loading="lazy" />
+            <span>Python</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="language-icon" loading="lazy" />
+            <span>Java</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="language-icon" loading="lazy" />
+            <span>C</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="language-icon" loading="lazy" />
+            <span>C++</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" class="language-icon" loading="lazy" />
+            <span>SQL</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R" class="language-icon" loading="lazy" />
+            <span>R</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="language-icon" loading="lazy" />
+            <span>Vue.js</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="language-icon" loading="lazy" />
+            <span>HTML</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="language-icon" loading="lazy" />
+            <span>CSS</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="language-icon" loading="lazy" />
+            <span>JavaScript</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/astro/astro-original.svg" alt="Astro" class="language-icon" loading="lazy" />
+            <span>Astro</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" alt="Markdown" class="language-icon" loading="lazy" />
+            <span>Markdown</span>
+        </div>
+        <div class="language-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" alt="LaTeX" class="language-icon" loading="lazy" />
+            <span>LaTeX</span>
+        </div>
     </div>
 
     <!-- IMAGE MODAL -->
